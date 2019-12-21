@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gymoto</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_enquiry">enquiry</string>
+    <string name="invalid_name">Please Enter Valid Name.</string>
+    <string name="invalid_Mobile">Please Enter Valid Mobile.</string>
+    <string name="invalid_Email">Please Enter Valid Email.</string>
+    <string name="Empty">This Field Cannot be Empty.</string>
+    <string name="title_activity_members">Members</string>
+    <string name="title_activity_single_member">Profile</string>
+    <string name="title_activity_list_enquiry">ListEnquiry</string>
+    <string name="title_activity_single_enquiry">SingleEnquiryActivity</string>
+</resources>

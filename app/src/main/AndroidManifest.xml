@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.weoto.gymoto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".Helper.Gymoto_Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".AddEnquiry"
+            android:label="@string/title_activity_enquiry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MembersActivity"
+            android:label="@string/title_activity_members"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.weoto.gymoto.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SingleMemberActivity"
+            android:label="@string/title_activity_single_member"
+            android:parentActivityName=".MembersActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.weoto.gymoto.MembersActivity" />
+        </activity>
+        <activity
+            android:name=".ListEnquiry"
+            android:label="@string/title_activity_list_enquiry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingleEnquiryActivity"
+            android:label="@string/title_activity_single_enquiry"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
